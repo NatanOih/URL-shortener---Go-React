@@ -20,3 +20,9 @@ func GetAllUrls(c *fiber.Ctx) error {
 
 	return c.JSON(JsonForUi)
 }
+
+func TestUrl(c *fiber.Ctx) error {
+
+	JsonForUi := "hi"
+	return c.JSON(JsonForUi)
+}
