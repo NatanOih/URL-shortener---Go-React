@@ -24,4 +24,6 @@ COPY . .
 
 RUN chmod -R +x /app
 
+EXPOSE 3000
+
 ENTRYPOINT CompileDaemon --build="go build -o build/goapp" -command="./build/goapp" -build-dir=/app -polling=true
