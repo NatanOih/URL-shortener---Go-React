@@ -38,6 +38,6 @@ func main() {
 	setupRoutes(app)
 
 	// log.Fatal(app.Listen(os.Getenv("APP_PORT")))
-	log.Fatal(app.Listen(":3000"))
+	log.Fatal(app.Listen("0.0.0.0:3000"))
 
 }
