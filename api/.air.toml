@@ -1,0 +1,15 @@
+
+[build]
+  cmd = "go build -o main main.go"
+  bin = "main"
+  dir = "."
+  include_ext = ["go"]
+  exclude_dir = ["vendor"]
+  run_after_build = "chmod +x main"
+
+[log]
+  time = true
+
+[color]
+  main = "cyan"
+  watcher = "green"
