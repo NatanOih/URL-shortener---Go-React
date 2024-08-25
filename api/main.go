@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"log"
-	"os"
 
 	"github.com/NatanOih/urlShortenerGo/routes"
 	"github.com/gofiber/fiber/v2"
@@ -38,6 +37,7 @@ func main() {
 
 	setupRoutes(app)
 
-	log.Fatal(app.Listen(os.Getenv("APP_PORT")))
+	// log.Fatal(app.Listen(os.Getenv("APP_PORT")))
+	log.Fatal(app.Listen("fearless-hope-production.up.railway.app:3000"))
 
 }
