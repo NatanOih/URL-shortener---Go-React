@@ -33,7 +33,8 @@ func main() {
 
 	fmt.Print("app is running on port 3000")
 
-	app.Static("/", "./frontend/dist")
+	// app.Static("/", "./frontend/dist")
+	app.Static("/", "../frontend/dist")
 
 	setupRoutes(app)
 
