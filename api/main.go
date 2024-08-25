@@ -38,6 +38,6 @@ func main() {
 	setupRoutes(app)
 
 	// log.Fatal(app.Listen(os.Getenv("APP_PORT")))
-	log.Fatal(app.Listen("fearless-hope-production.up.railway.app:3000"))
+	log.Fatal(app.Listen(":3000"))
 
 }
