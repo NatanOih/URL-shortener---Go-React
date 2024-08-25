@@ -2,14 +2,14 @@
 
 
 # Stage 1: Build the React app
-FROM node:22-alpine AS frontend-build
+# FROM node:22-alpine AS frontend-build
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY ../frontend/package*.json ./frontend
-RUN npm install
-COPY ../frontend ./frontend
-RUN npm run build
+# COPY ../frontend/package*.json ./frontend
+# RUN npm install
+# COPY ../frontend ./frontend
+# RUN npm run build
 
 
 FROM golang:1.22-alpine 
