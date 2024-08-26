@@ -24,11 +24,11 @@ function App() {
     customShort: "",
   });
 
-  const BASE_URL = "0.0.0.0";
+  const BASE_URL = "";
 
   const fetchData = async () => {
     try {
-      const response = await fetch(BASE_URL + "/api/v1/url-list", {});
+      const response = await fetch("/api/v1/url-list", {});
       console.log("response", response);
 
       if (!response.ok) {
