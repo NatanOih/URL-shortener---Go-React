@@ -9,6 +9,7 @@ import (
 )
 
 func GetAllUrls(c *fiber.Ctx) error {
+	fmt.Print("got here")
 	r := database.CreateClient(0)
 	defer r.Close()
 
